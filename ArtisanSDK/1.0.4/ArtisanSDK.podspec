@@ -14,5 +14,5 @@ Artisan is the first Mobile Experience Management platform that makes it easy to
   s.requires_arc = true
   s.documentation = { :html => 'http://useartisan.com/' }
   s.preserve_path = '*.framework'
-  s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)"', 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/ArtisanSDK"', 'OTHER_LDFLAGS' => '-ObjC, -lz'}
+  s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)"', 'FRAMEWORK_SEARCH_PATHS' => '"$(inherited) $(PODS_ROOT)/ArtisanSDK"', 'OTHER_LDFLAGS' => '-ObjC, -lz'}
 end
