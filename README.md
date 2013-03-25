@@ -60,3 +60,14 @@ Inside your application:didFinishLaunchingWithOptions: method, add the following
 [ARManager startWithAppId:@"##########################" version:@"1.0" options:nil];
 ```
 where ################### is the application ID of your app. This can be found by logging in to artisantools.com, selecting your app and looking at the URL. It should look like `https://artisantools.com/apps/##########################`. What takes the place of the #'s is your applications ID.
+
+Troubleshooting
+==============
+If building your project after enabling the SDK through the code changes above results in an error referencing an inability to locate `<ArtisanSDK/ArtisanSDK.h>` you may need to edit your build settings on your target. To do this:
+
+* Select your project file.
+* Select your target.
+* Select the Build Settings tab.
+* Locate the Framework Search Paths and add `$(PODS_ROOT)/ArtisanSDK`
+
+This should allow you to successfully build your app.
