@@ -1,7 +1,7 @@
-Installing the [ArtisanSDK](useartisan.com) via [CocoaPods](cocoapods.org)
+Installing the [ArtisanSDK](http://www.useartisan.com) via [CocoaPods](http://www.cocoapods.org)
 =================
 
-If your project is already using [CocoaPods](cocoapods.org) for managing your library dependencies you may wish to install the Artisan SDK in the same way. If you do not currently use CocoaPods, but would like to, this is an alternative method to install, manage, and update Artisan in your project.
+If your project is already using [CocoaPods](http://www.cocoapods.org) for managing your library dependencies you may wish to install the Artisan SDK in the same way. If you do not currently use CocoaPods, but would like to, this is an alternative method to install, manage, and update Artisan in your project.
 
 Installing CocoaPods
 =========
