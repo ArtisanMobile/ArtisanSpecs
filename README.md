@@ -37,7 +37,7 @@ The above line will use the latest version of Artisan. Should you choose to lock
 
 Install Dependencies
 ============
-Installing your dependencies is as easy as executing `pod install` from the location of your podfile. Should you want to update Artisan to a newer version, you can update your podfile to reflect that version and re-run `pod install`.
+Installing your dependencies is as easy as executing `pod install --no-doc` from the location of your podfile. Should you want to update Artisan to a newer version, you can update your podfile to reflect that version and re-run `pod install --no-doc`.
 
 Important
 =============
