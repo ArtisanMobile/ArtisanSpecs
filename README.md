@@ -16,7 +16,7 @@ $ pod setup
 Referencing the ArtisanSpecs Repository
 ============
 The ArtisanSDK is not distributed through the CocoaPods pod spec repository. We maintain our own private spec repository to manage the different release versions of Artisan. In order to inform CocoaPods about the location of this repository you can run: 
-`pod repo add ArtisanSpecs git@github.com:appRenaissance/ArtisanSpecs.git`
+`pod repo add ArtisanSpecs git@github.com:ArtisanMobile/ArtisanSpecs.git`
 
 Creating/Editing a Podfile
 ============
