@@ -4,9 +4,9 @@ Pod::Spec.new do |s|
   s.summary      = "Master your mobile experience like never before.
 Artisan is the first Mobile Experience Management platform that makes it easy to create and manage mobile experiences that drive retention, engagement, and revenue. Gain deep insights into user behavior, quickly modify and publish changes in real-time without writing code or waiting for app store approvals."
   s.homepage     = "http://www.useartisan.com"
-  s.license      = { :type => 'MIT', :file => 'FILE_LICENSE' }
+  s.license      = { :type => 'Proprietary', :file => 'FILE_LICENSE' }
   s.author       = { "Kevin Jenkins" => "kevin.jenkins@useartisan.com" }
-  s.source       = { :git => "https://github.com/appRenaissance/ArtisanSDK.git", :tag => '1.0.4' }
+  s.source       = { :git => "https://github.com/ArtisanMobile/ArtisanSDK.git", :tag => '1.0.4' }
   s.platform     = :ios, '5.0'
   s.resources    = 'ArtisanSDK.bundle', 'ArtisanAnalytics.bundle'
   s.frameworks   = 'ArtisanSDK', 'CoreData', 'CFNetwork', 'Security', 'QuartzCore', 'SystemConfiguration'
