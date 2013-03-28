@@ -35,6 +35,10 @@ If you are already using CocoaPods, you can just add the pod line to your existi
 The above line will use the latest version of Artisan. Should you choose to lock yourself at a version you can modify that line:
 `pod 'ArtisanSDK', '1.0.3'
 
+In order to upgrade or downgrade the version number you will need to delete the previously downloaded files from your Pods directory. From the directory containing your Podfile:
+`rm -rf Pods/ArtisanSDK`
+
+
 Install Dependencies
 ============
 Installing your dependencies is as easy as executing `pod install --no-doc` from the location of your podfile. Should you want to update Artisan to a newer version, you can update your podfile to reflect that version and re-run `pod install --no-doc`.
