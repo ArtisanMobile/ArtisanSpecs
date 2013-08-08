@@ -60,7 +60,7 @@ At the top of the file with your other import statements, add:
 ```
 
 Inside your application:didFinishLaunchingWithOptions: method, add the following line before all `return YES;` lines.
-``` objective-c
+```objective-c
 [ARManager startWithAppId:@"##########################" version:@"1.0" options:nil];
 ```
 where ################### is the application ID of your app. This can be found by logging in to artisantools.com, selecting your app and looking at the URL. It should look like `https://artisantools.com/apps/##########################`. What takes the place of the #'s is your applications ID.
@@ -72,6 +72,7 @@ If building your project after enabling the SDK through the code changes above r
 * Select your project file.
 * Select your target.
 * Select the Build Settings tab.
-* Locate the Framework Search Paths and add `$(PODS_ROOT)/ArtisanSDK`
+* Locate Other Linker Flags and add `$(inherited)`
+* If that doesn't work, locate the Framework Search Paths and add `$(PODS_ROOT)/ArtisanSDK`
 
 This should allow you to successfully build your app.
