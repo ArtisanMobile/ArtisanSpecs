@@ -55,7 +55,7 @@ Enabling Artisan in Your Project
 To enable Artisan at this point requires the addition of two lines to your AppDelegate file.
 
 At the top of the file with your other import statements, add:
-``` objective-c
+```objective-c
 #import <ArtisanSDK/ArtisanSDK.h>
 ```
 
@@ -67,12 +67,25 @@ where ################### is the application ID of your app. This can be found b
 
 Troubleshooting
 ==============
+
+If you see this error when running pod install:
+```
+    [!] The target `mysampletarget [Debug]` overrides the `OTHER_LDFLAGS` build setting defined in `Pods/Pods.xcconfig'.
+        - Use the `$(inherited)` flag, or
+        - Remove the build settings from the target.
+```
+You can follow these steps to fix it in xcode:
+* Select your project file.
+* Select your target.
+* Select the Build Settings tab.
+* Locate Other Linker Flags and add `$(inherited)`
+
+
 If building your project after enabling the SDK through the code changes above results in an error referencing an inability to locate `<ArtisanSDK/ArtisanSDK.h>` you may need to edit your build settings on your target. To do this:
 
 * Select your project file.
 * Select your target.
 * Select the Build Settings tab.
-* Locate Other Linker Flags and add `$(inherited)`
-* If that doesn't work, locate the Framework Search Paths and add `$(PODS_ROOT)/ArtisanSDK`
+* Locate the Framework Search Paths and add `$(PODS_ROOT)/ArtisanSDK`
 
 This should allow you to successfully build your app.
