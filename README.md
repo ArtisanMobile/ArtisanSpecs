@@ -33,7 +33,7 @@ pod 'ArtisanSDK'
 If you are already using CocoaPods, you can just add the pod line to your existing pod file and update the minimum iOS platform version.
 
 The above line will use the latest version of Artisan. Should you choose to lock yourself at a version you can modify that line:
-`pod 'ArtisanSDK', '1.0.3'`
+`pod 'ArtisanSDK', '2.0.11'`
 
 In order to upgrade or downgrade the version number you will need to delete the previously downloaded files from your Pods directory. From the directory containing your Podfile:
 `rm -rf Pods/ArtisanSDK`
@@ -61,7 +61,7 @@ At the top of the file with your other import statements, add:
 
 Inside your application:didFinishLaunchingWithOptions: method, add the following line before all `return YES;` lines.
 ```objective-c
-[ARManager startWithAppId:@"##########################" version:@"1.0" options:nil];
+[ARManager startWithAppId:@"##########################" options:nil];
 ```
 where ################### is the application ID of your app. This can be found by logging in to artisantools.com, selecting your app and looking at the URL. It should look like `https://artisantools.com/apps/##########################`. What takes the place of the #'s is your applications ID.
 
