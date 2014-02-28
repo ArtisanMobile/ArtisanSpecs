@@ -7,12 +7,13 @@ Artisan is the first Mobile Experience Management platform that makes it easy to
   s.license      = { :type => 'Proprietary', :file => 'FILE_LICENSE' }
   s.author       = { "Artisan" => "support@useartisan.com" }
   s.source       = { :git => "https://github.com/ArtisanMobile/ArtisanSDK.git", :tag => '2.0.14' }
+  s.source_files = 'ArtisanSDK.framework/Headers/*.h'
   s.platform     = :ios, '6.0'
   s.resources    = 'ArtisanSDK.bundle'
   s.frameworks   = 'ArtisanSDK', 'CoreData', 'CFNetwork', 'Security', 'QuartzCore', 'SystemConfiguration', 'CoreLocation'
   s.library      = 'z'
   s.requires_arc = true
   s.documentation = { :html => 'http://useartisan.com/' }
-  s.preserve_path = '*.framework'
+  s.preserve_path = 'ArtisanSDK.framework'
   s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)"', 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PODS_ROOT)/ArtisanSDK"', 'OTHER_LDFLAGS' => '-ObjC, -lz'}
 end
