@@ -25,7 +25,7 @@ In order to manage your library dependecies with CocoaPods you need to [create a
 Create a file called `podfile` in the root directory of your project with the following:
 
 ```
-platform :ios, '5.0'  # minimum ios version for Artisan
+platform :ios, '6.0'  # minimum ios version for Artisan
 
 pod 'ArtisanSDK'
 ```
