@@ -15,7 +15,7 @@ $ pod setup
 
 Referencing the ArtisanSpecs Repository
 ============
-The ArtisanSDK is not distributed through the CocoaPods pod spec repository. We maintain our own private spec repository to manage the different release versions of Artisan. In order to inform CocoaPods about the location of this repository you can run: 
+The ArtisanSDK is not distributed through the CocoaPods pod spec repository. We maintain our own private spec repository to manage the different release versions of Artisan. In order to inform CocoaPods about the location of this repository you can run:
 `pod repo add ArtisanSpecs git@github.com:ArtisanMobile/ArtisanSpecs.git`
 
 Creating/Editing a Podfile
@@ -45,7 +45,7 @@ Installing your dependencies is as easy as executing `pod install` from the loca
 
 Important
 =============
-When you install your dependencies, CocoaPods will create an _**.xcworkspace**_ for your project. You will need to open this instead of your .xcodeproj file whenever you want to work with your project from this point forward. 
+When you install your dependencies, CocoaPods will create an _**.xcworkspace**_ for your project. You will need to open this instead of your .xcodeproj file whenever you want to work with your project from this point forward.
 
 The workspace keeps your code separate from the dependencies managed by CocoaPods while keeping track of the required build settings for each sub-project and implementing them on a per-project basis.
 
