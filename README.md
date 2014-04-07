@@ -33,7 +33,7 @@ pod 'ArtisanSDK'
 If you are already using CocoaPods, you can just add the pod line to your existing pod file and update the minimum iOS platform version.
 
 The above line will use the latest version of Artisan. Should you choose to lock yourself at a version you can modify that line:
-`pod 'ArtisanSDK', '2.0.11'`
+`pod 'ArtisanSDK', '2.0.17'`
 
 In order to upgrade or downgrade the version number you will need to delete the previously downloaded files from your Pods directory. From the directory containing your Podfile:
 `rm -rf Pods/ArtisanSDK`
