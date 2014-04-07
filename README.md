@@ -61,9 +61,9 @@ At the top of the file with your other import statements, add:
 
 Inside your application:didFinishLaunchingWithOptions: method, add the following line before all `return YES;` lines.
 ```objective-c
-[ARManager startWithAppId:@"##########################" options:nil];
+[ARManager startWithAppId:@"##########################"];
 ```
-where ################### is the application ID of your app. This can be found by logging in to artisantools.com, selecting your app and looking at the URL. It should look like `https://artisantools.com/apps/##########################`. What takes the place of the #'s is your applications ID.
+where ########################## is the Artisan App ID of your app. This can be found on artisantools.com either in your getting started notification or on your app settings page.
 
 Troubleshooting
 ==============
