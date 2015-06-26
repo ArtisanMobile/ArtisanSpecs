@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'Proprietary', :file => 'FILE_LICENSE' }
   s.author       = { "Artisan" => "support@useartisan.com" }
   s.source       = { :git => "https://github.com/ArtisanMobile/ArtisanSDK.git", :tag => '2.4.16' }
-  s.source_files = 'ArtisanSDK.framework/Headers/*.h'
+  s.source_files = 'ArtisanSDK.framework/Versions/A/Headers/*.h'
   s.platform     = :ios, '6.0'
   s.resources    = 'ArtisanSDK.bundle'
   s.frameworks   = 'ArtisanSDK', 'CoreData', 'CFNetwork', 'Security', 'QuartzCore', 'SystemConfiguration', 'CoreLocation'
